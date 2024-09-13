@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <title>مشترياتي</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link href="css/style.css" rel="stylesheet" />
+
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #f9f9f9;
+        margin: 0;
+        padding: 0;
+      }
+
+      .signin-section {
+        display: flex;
+        min-height: 100vh;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffffff;
+      }
+
+      .signin-container {
+        display: flex;
+        background-color: #ffffff;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        max-width: 1000px;
+        width: 100%;
+      }
+
+      .signin-img {
+        flex: 1;
+        background: url("images/shopping.jpg") no-repeat center center/cover;
+        position: relative;
+      }
+
+      .signin-form {
+        flex: 1;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .signin-form h2 {
+        font-size: 28px;
+        color: #db4f66;
+        font-weight: bold;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      .signin-form .form-group {
+        margin-bottom: 20px;
+      }
+
+      .signin-form label {
+        font-size: 14px;
+        color: #514f4f;
+      }
+
+      .signin-form .form-control {
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        font-size: 16px;
+      }
+
+      .signin-form .btn-primary {
+        background-color: #f89cab;
+        border: none;
+        font-size: 18px;
+        padding: 10px 20px;
+        border-radius: 50px;
+        transition: background-color 0.3s ease;
+      }
+
+      .signin-form .btn-primary:hover {
+        background-color: #db4f66;
+      }
+
+      .signin-form .text-center {
+        margin-top: 20px;
+      }
+
+      @media screen and (max-width: 768px) {
+        .signin-container {
+          flex-direction: column;
+        }
+
+        .signin-img {
+          height: 300px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="signin-section">
+      <div class="signin-container">
+        <div class="signin-img"></div>
+
+        <div class="signin-form">
+          <h2>تسجيل الدخول</h2>
+          <form>
+            <div class="form-group">
+              <label for="email">البريد الإلكتروني</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="أدخل بريدك الإلكتروني"
+              />
+            </div>
+            <div class="form-group">
+              <label for="password">كلمة المرور</label>
+              <input
+                type="password"
+                class="form-control"
+                id="password"
+                placeholder="أدخل كلمة المرور"
+              />
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">
+              تسجيل الدخول
+            </button>
+
+            <div class="text-center">
+              <a href="signup.html" class="signin-link"
+                >لا تملك حساباً؟ إنشاء حساب</a
+              >
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
